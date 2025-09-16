@@ -1,0 +1,70 @@
+# --- Build outputs ---
+/target/
+/build/
+/out/
+!/.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# --- Logs ---
+*.log
+spring.log
+
+# --- IDEs ---
+# Eclipse / STS
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- Secrets / local config ---
+.env
+*.env
+*.jks
+*.p12
+*.keystore
+*.pem
+*.key
+# Keep public certs if needed, but avoid private keys
+*.crt
+
+# --- Spring local/secret profiles ---
+application-local.*
+application-secrets.*
+application-*.local.*
+application-test.properties
+application-test.yml
+
+# --- DB dumps / data ---
+*.db
+db/data/
+data/
+dump*.sql
+
+# --- Docs ---
+HELP.md
